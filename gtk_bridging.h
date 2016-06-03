@@ -60,6 +60,7 @@ struct _GtkColorSelectionPrivate {};
 struct _GtkComboBoxAccessiblePrivate {};
 struct _GtkComboBoxPrivate {};
 struct _GtkComboBoxTextPrivate {};
+struct _GtkContainerAccessiblePrivate {};
 struct _GtkContainerCellAccessiblePrivate {};
 struct _GtkContainerPrivate {};
 struct _GtkCssProviderPrivate {};
