@@ -273,5 +273,4 @@ struct _GtkSocketPrivate {};
 #define GLIB_DISABLE_DEPRECATION_WARNINGS
 #include <gtk/gtk.h>
 #include <gtk/gtk-a11y.h>
-#include <gtk/gtkplug.h>
-#include <gtk/gtksocket.h>
+#include <gtk/gtkx.h>
