@@ -5,11 +5,12 @@ module CGtk [system] {
 	link "gdk-3.0"
 	link "atk-1.0"
 	link "pangocairo-1.0"
-	link "cairo-1.0"
 	link "pangoft2-1.0"
 	link "fontconfig"
 	link "freetype"
 	link "pango-1.0"
+	link "cairo"
+	link "cairo-gobject"
 	link "gobject-2.0"
 	link "glib-2.0"
 
