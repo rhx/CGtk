@@ -271,5 +271,7 @@ struct _GtkPlugPrivate {};
 struct _GtkSocketPrivate {};
 
 #define GLIB_DISABLE_DEPRECATION_WARNINGS
+#include <unistd.h>
+#include <termios.h>
 #include <gtk/gtkx.h>
 #include <gtk/gtk-a11y.h>
