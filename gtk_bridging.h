@@ -270,6 +270,15 @@ struct _GtkWindowPrivate {};
 struct _GtkPlugPrivate {};
 struct _GtkSocketPrivate {};
 
+// gtk+-3.20
+struct _GtkFileChooserNative {};
+struct _GtkShortcutsGroup {};
+struct _GtkShortcutsGroupClass {};
+struct _GtkShortcutsSection {};
+struct _GtkShortcutsSectionClass {};
+struct _GtkShortcutsShortcut {};
+struct _GtkShortcutsShortcutClass {};
+
 #define GLIB_DISABLE_DEPRECATION_WARNINGS
 #include <unistd.h>
 #include <termios.h>
