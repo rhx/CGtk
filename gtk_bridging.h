@@ -279,6 +279,16 @@ struct _GtkShortcutsSectionClass {};
 struct _GtkShortcutsShortcut {};
 struct _GtkShortcutsShortcutClass {};
 
+// gtk+-3.8
+struct _GtkFlowBoxAccessible {};
+struct _GtkFlowBoxAccessibleClass {};
+struct _GtkFlowBoxChildAccessible {};
+struct _GtkFlowBoxChildAccessibleClass {};
+struct _GtkMenuButtonAccessible {};
+struct _GtkMenuButtonAccessibleClass {};
+struct _GtkPopoverAccessible {};
+struct _GtkPopoverAccessibleClass {};
+
 #define GLIB_DISABLE_DEPRECATION_WARNINGS
 #include <unistd.h>
 #include <termios.h>
