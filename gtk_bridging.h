@@ -286,13 +286,13 @@ struct _GtkShortcutsShortcutClass {};
 #include <gtk/gtk-a11y.h>
 
 // gtk+-3.8
-//#if GTK_MINOR_VERSION < 18
-//struct _GtkFlowBoxAccessible {};
-//struct _GtkFlowBoxAccessibleClass {};
-//struct _GtkFlowBoxChildAccessible {};
-//struct _GtkFlowBoxChildAccessibleClass {};
-//struct _GtkMenuButtonAccessible {};
-//struct _GtkMenuButtonAccessibleClass {};
-//struct _GtkPopoverAccessible {};
-//struct _GtkPopoverAccessibleClass {};
-//#endif
+#if GTK_MINOR_VERSION < 18
+struct _GtkFlowBoxAccessible {};
+struct _GtkFlowBoxAccessibleClass {};
+struct _GtkFlowBoxChildAccessible {};
+struct _GtkFlowBoxChildAccessibleClass {};
+struct _GtkMenuButtonAccessible {};
+struct _GtkMenuButtonAccessibleClass {};
+struct _GtkPopoverAccessible {};
+struct _GtkPopoverAccessibleClass {};
+#endif
