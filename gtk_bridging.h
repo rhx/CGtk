@@ -283,8 +283,8 @@ struct _GtkShortcutsShortcutClass {};
 struct _GtkPadController {};
 struct _GtkPadControllerClass {};
 struct _GtkPadControllerInterface {};
-struct _GtkStackAccessible {};
-struct _GtkStackAccessibleClass {};
+//struct _GtkStackAccessible {};
+//struct _GtkStackAccessibleClass {};
 struct _GtkStackAccessibleInterface {};
 struct _GtkShortcutLabel {};
 struct _GtkShortcutLabelClass {};
@@ -295,6 +295,12 @@ struct _GtkShortcutLabelInterface {};
 #include <termios.h>
 #include <gtk/gtkx.h>
 #include <gtk/gtk-a11y.h>
+#if GTK_MINOR_VERSION >= 22
+#  ifndef __GTK_STACK_ACCESSIBLE_H__
+#    define GTK_COMPILATION
+#    include <gtk/a11y/gtkstackaccessible.h>
+#  endif
+#endif
 
 // gtk+-3.8
 #if GTK_MINOR_VERSION < 18
