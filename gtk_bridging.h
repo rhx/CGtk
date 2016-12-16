@@ -279,6 +279,17 @@ struct _GtkShortcutsSectionClass {};
 struct _GtkShortcutsShortcut {};
 struct _GtkShortcutsShortcutClass {};
 
+// gtk+-3.22
+struct _GtkPadController {};
+struct _GtkPadControllerClass {};
+struct _GtkPadControllerInterface {};
+struct _GtkStackAccessible {};
+struct _GtkStackAccessibleClass {};
+struct _GtkStackAccessibleInterface {};
+struct _GtkShortcutLabel {};
+struct _GtkShortcutLabelClass {};
+struct _GtkShortcutLabelInterface {};
+
 #define GLIB_DISABLE_DEPRECATION_WARNINGS
 #include <unistd.h>
 #include <termios.h>
