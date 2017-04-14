@@ -1,6 +1,33 @@
 # CGtk
 A wrapper around gtk-3.x for Swift
 
+## Building
+
+You cannot build this package directly, as this is just a C header file wrapper for [SwiftGtk](https://github.com/rhx/SwiftGtk) that you embed into your own project (see 'Usage' below).
+
+## Usage
+
+To use CGtk, you need to use the [Swift Package Manager](https://swift.org/package-manager/).  Simply add `SwiftGtk` as a dependency to your `Package.swift` file, e.g.:
+
+```Swift
+import PackageDescription
+
+let package = Package(
+    name: "MyPackage",
+    dependencies: [
+        .Package(url: "https://github.com/rhx/SwiftGtk.git", majorVersion: 3)
+    ]
+)
+```
+
+### Example Projects
+
+You can find the following example projects on GitHub that show how to use SwiftGtk:
+
+ * [SwiftHelloGtk](https://github.com/rhx/SwiftHelloGtk)
+ * [SwiftHelloGtkBuilder](https://github.com/rhx/SwiftHelloGtkBuilder)
+ 
+
 ## Troubleshooting
 Here are some common errors you might encounter and how to fix them.
 
