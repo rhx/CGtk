@@ -314,3 +314,23 @@ struct _GtkMenuButtonAccessibleClass {};
 struct _GtkPopoverAccessible {};
 struct _GtkPopoverAccessibleClass {};
 #endif
+
+typedef void (*GObjectNotifyQueueDispatcher) (GObject *object, guint n_pspecs, GParamSpec **pspecs);
+
+typedef struct _GObjectNotifyContext
+{
+    GQuark                       quark_notify_queue;
+    GObjectNotifyQueueDispatcher dispatcher;
+    GTrashStack                 *_nqueue_trash; /* unused */
+} GObjectNotifyContext;
+
+typedef struct _GObjectNotifyQueue
+{
+    GObjectNotifyContext *context;
+    GSList               *pspecs;
+    guint16               n_pspecs;
+    guint16               freeze_count;
+} GObjectNotifyQueue;
+
+extern GParamSpecPool       *_gtk_widget_child_property_pool;
+extern GObjectNotifyContext *_gtk_widget_child_property_notify_context;
