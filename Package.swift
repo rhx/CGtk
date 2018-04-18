@@ -1,3 +1,13 @@
-import PackageDescription 
+// swift-tools-version:4.0
 
-let package = Package(name: "CGtk")
+import PackageDescription
+
+let package = Package(
+    name: "CGtk",
+    products: [
+        .library(name: "CGtk", targets: ["CGtk"]),
+    ],
+    targets: [
+        .target(name: "CGtk"),
+    ]
+)
